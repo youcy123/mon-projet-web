@@ -141,39 +141,38 @@ h3 {
 .right-column h3:hover {
     border-left: 4px solid #6a1d18; 
 }
-
-
-/* 
-
 footer {
     text-align: center;
-    padding: 20px 0;
-    background-color: #3d0906;
 }
-
+.social-links {
+    padding-top: 20px;
+    padding-left: 40px;
+}
 .social-links a {
     margin: 0 10px;
     display: inline-block;
 }
 
 footer p {
+    text-align: right;
+    padding-right: 200px;
     margin-top: 10px;
-    color: #ca9e6d;
-} */
+    color: white
+}
 
-/* .social-links a img {
+.social-links a img {
     transition: opacity 0.3s ease;
 }
 
 .social-links a img:hover {
     opacity: 0.7; 
-} */
+} 
 
-/* a {
+a {
     text-decoration: none; 
     transition: text-decoration 0.3s ease;
 }
 
 a:hover {
     text-decoration: underline; 
-} */
+}
