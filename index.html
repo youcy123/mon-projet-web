@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="CV de BOURASS YOUSRA- Développeuse Web Junior">
     <title>CV- BOURASS_YOUSRA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -12,14 +13,18 @@
     <div class="cv-container">
         <header>
             <div class="profile-section">
-                <img src="image/profile.jpg" alt="Photo de bourass yousra" class="profile-photo">
+                <a href="image/profile.jpg" target="_blank">
+                    <img src="image/profile.jpg" alt="Photo de bourass yousra" class="profile-photo">
+                </a>                
                 <h1>BOURASS YOUSRA</h1>
                 <h2>Développeuse web junior</h2>
             </div>
             <div class="contact-section">
-                <p>6 rue maréchal leclerc<br>21000 Dijon</p>
-                <p>youcyyousra@gmail.com</p>
-                <p>0702030102</p>
+                <div class="contact-section">
+                    <p><a href="https://www.google.com/maps/place/6+Rue+Maréchal+Leclerc+21000+Dijon" target="_blank">6 rue maréchal leclerc, 21000 Dijon</a></p>
+                    <p><a href="mailto:youcyyousra@gmail.com">youcyyousra@gmail.com</a></p>
+                    <p><a href="tel:0702030102">0702030102</a></p>
+                </div>
             </div>
         </header>
 
@@ -27,7 +32,11 @@
             <section class="left-column">
                 <section class="about">
                     <h3>A propos</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <p>Étudiante en troisième année du cycle ingénieur à ESIREM filière ILC (ingénierie logiciel) , je suis à la recherche d'un stage de six
+                        mois afin de mettre en pratique les connaissances acquises dans les domaines des mathématiques et de la programmation. Fort de
+                        mon expérience et de ma passion pour ces disciplines, notamment démontrées par ma victoire lors d'un Hackathon, je suis
+                        déterminée à contribuer activement à un projet concret au sein de votre entreprise. Attentive, responsable et ambitieuse, je suis prête
+                        à relever les défis qui se présenteront et à apporter une valeur ajoutée à votre équipe.</p>
                 </section>
                 <section class="languages">
                     <h3>Langues parlées</h3>
@@ -70,7 +79,7 @@
                                 procédures de maintenance.</li>
                         </ul>
                     </div>
-                    <div class="job"></div>
+                    <div class="job">
                         <h4> IT Solutions - assistante responsable département informatique</h4>
                         <p>Juillet 2023 - Août 2023</p>
                         <ul>
@@ -87,7 +96,7 @@
                                 d'informations</li>
                         </ul>
                     </div>
-                    <div class="job"></div>
+                    <div class="job">
                         <h4>  Hackathon - Besançon - Optimisation du Temps d'Attente des Donneurs de Sang</h4>
                         <p>Octobre 2022 </p>
                         <ul>
@@ -97,7 +106,7 @@
                             <li>Utilisation d'outils tels que Python pour permettre la création d’une application en collaboration avec l’équipe développement Web.</li>
                         </ul>
                     </div>
-                    <div class="job"></div>
+                    <div class="job">
                         <h4>  Hackathon - Besançon - Optimisation du Temps d'Attente des Donneurs de SangJESA - Casablanca - Assistante chef de projet</h4>
                         <p>Juillet 2022 - Août 2022  </p>
                         <ul>
@@ -117,12 +126,12 @@
                         <p>Septembre 2022 - actuellement</p>
                         <p>Diplôme d'ingénieur informatique et réseaux : ingénierie logicielle                        </p>
                     </div>
-                    <div class="degree"></div>
+                    <div class="degree">
                         <h4>  Lycée Technique Mohammedia</h4>
                         <p>Septembre 2020 - Juin 2022</p>
                         <p>Classes préparatoires option MPSI</p>
                     </div>
-                    <div class="degree"></div>
+                    <div class="degree">
                         <h4>  Lycée Pythagore Mohammedia, Maroc </h4>
                         <p>Juin 2020</p>
                         <p> Baccalauréat Sciences Mathématiques 'A': Mention très bien                        </p>
@@ -150,12 +159,20 @@
 
         <footer>
             <div class="social-links">
-                <a href="www.linkedin.com/in/bourass-yousra-b26472252"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
-                <a href="https://github.com/youcy123"><img src="images/github-icon.png" alt="GitHub"></a>
-                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                <a href="www.linkedin.com/in/bourass-yousra-b26472252"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/youcy123"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
-            <p>Dernière mise à jour le 10 Août 2022.</p>
-        </footer>
+            <p id="last-update">Dernière mise à jour le </p>
+        </footer>   
+        <!-- mettre a jour la date actuelle  -->
+<script>
+    const lastUpdateElement = document.getElementById("last-update");
+    const currentDate = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = currentDate.toLocaleDateString('fr-FR', options);
+    lastUpdateElement.textContent += formattedDate + ".";
+</script>     
     </div>
 </body>
 </html>
