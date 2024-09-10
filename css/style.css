@@ -65,7 +65,12 @@ body {
     height: 150px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer; 
 }
+.profile-photo:hover {
+    transform: scale(1.1);
+}
+
 .contact-section {
     width: 100%;
     display: flex;
