@@ -20,10 +20,6 @@
     font-style: italic;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 
 
 body {
@@ -39,10 +35,12 @@ body {
 }
 
 .cv-container {
-    width:  1160px;
-    background-color: #3d0906;
-    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1160px;
     margin: 0 auto;
+    box-sizing: border-box; 
+    border-right: 1px solid #ccc; 
 }
 
  header {
@@ -119,6 +117,7 @@ main {
     width: 30%;
     background-color: #3d0906;
     padding: 10px 0;
+    padding-right: 20px;
 }
 
 .right-column {
@@ -126,6 +125,7 @@ main {
     background-color: white;
     color: black;
     padding-left: 20px;
+    padding-right: 20px;
 }
 .education {
     padding-top: 15px;
