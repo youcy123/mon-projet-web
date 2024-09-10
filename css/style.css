@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('https://fonts.gstatic.com/s/raleway/v18/1Ptug8zYS_SKggPNyC0ISg.woff2') format('woff2'),
+         url('https://fonts.gstatic.com/s/raleway/v18/1Ptug8zYS_SKggPNyC0I.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('https://fonts.gstatic.com/s/raleway/v18/1Ptug8zYS_SKggPNyC0I.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('https://fonts.gstatic.com/s/raleway/v18/1Ptug8zYS_SKggPNyC0I.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #3d0906;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cv-container {
+    width: 900px;
+    background-color: #6a1d18;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3d0906;
+    padding: 20px;
+    border-bottom: 4px solid #ca9e6d;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+.contact-section {
+    text-align: right;
+    color: #d6d6d6;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.left-column {
+    width: 30%;
+    background-color: #3d0906;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.right-column {
+    width: 65%;
+}
+
+h3 {
+    background-color: #ca9e6d;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #3d0906;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer p {
+    margin-top: 10px;
+    color: #ca9e6d;
+}
